@@ -1,14 +1,10 @@
 # spotify-tagging
 
-This template should help get you started developing with Vue 3 in Vite.
+Add tags to songs from spotify and make tags-based playlists.
 
-## Recommended IDE Setup
+Being made with Vue 3, Vuetify, maybe Firebase.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+Here's the [Figma Design](https://www.figma.com/file/0J8m4e43yQWPvuONVuToG9/Spotify-Tagging?t=50xcmAOdeI3hheFO-1). See Issues for how to help or email me direct: maurop123@gmail.com
 
 ## Project Setup
 

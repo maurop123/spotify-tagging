@@ -1,5 +1,5 @@
 import { call, takeLatest, put } from 'redux-saga/effects';
-import { fetchSpotifySearch } from './searchReducer';
+import { fetchSpotifySearch } from './searchSlice';
 
 const SPOTIFY_CLIENT_ID = process.env.SPOTIFY_CLIENT_ID;
 const SPOTIFY_CLIENT_SECRET = process.env.SPOTIFY_CLIENT_SECRET;
@@ -8,7 +8,8 @@ export function* watchSearch() {
   yield takeLatest(fetchSpotifySearch, callSpotifySearch);
 }
 
-function* callSpotifySearch() {
+function* callSpotifySearch(payload) {
+  console.debug('callSpotifySearch payload', payload);
   try {
     //get access token
     const response = yield call(

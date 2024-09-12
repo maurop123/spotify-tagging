@@ -17,8 +17,14 @@ export const searchSlice = createSlice({
   name: 'search',
   initialState,
   reducers: {
-    fetchSpotifySearch: (state) => state,
-    fetchSpotifySuccess: (state) => state,
+    fetchSpotifySearch: (state) => {
+      console.debug('fetchSpotifySearch reducer');
+      return state;
+    },
+    fetchSpotifySuccess: (state) => {
+      console.debug('fetchSpotifySearch reducer');
+      return state;
+    },
     fetchSpotifyFailure: (state) => state,
   },
 });

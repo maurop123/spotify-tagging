@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { AppDispatch, RootState } from './store';
 import { fetchSpotifySearch } from './features/search/searchSlice';
 
@@ -12,6 +12,7 @@ import { fetchSpotifySearch } from './features/search/searchSlice';
 //
 
 export default function Home() {
+  const dispatch = useDispatch<AppDispatch>();
   const searchLoading = useSelector((state) => state.search.loading);
   console.debug({ searchLoading });
   function handleSearchChange(e) {

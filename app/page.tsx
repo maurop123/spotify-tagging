@@ -13,8 +13,7 @@ import { fetchSpotifySearch } from './features/search/searchSlice';
 
 export default function Home() {
   const dispatch = useDispatch<AppDispatch>();
-  const searchLoading = useSelector((state) => state.search.loading);
-  console.debug({ searchLoading });
+
   function handleSearchChange(e) {
     const { value } = e.target;
     console.debug({ value });
